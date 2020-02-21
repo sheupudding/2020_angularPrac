@@ -1,3 +1,11 @@
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
-<app-messages></app-messages>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a [title]="'hero list'" routerLink="/heroes">Heroes</a>
+  <a [title]="'history messages'" routerLink="/message">Message</a>
+</nav>
+<router-outlet></router-outlet>
+<!-- <a [title]="'history messages'" [routerLink]="['/message']">
+  message
+</a>
+<app-messages></app-messages> -->
